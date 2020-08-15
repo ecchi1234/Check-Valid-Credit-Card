@@ -9,10 +9,20 @@
 </head>
 
 <body>
-    <h1>Chào mừng đến với bộ kiểm tra credit card hợp lệ.</h1>
-    <label for="card-number">Điền vào đây</label>
-    <input type="text" id="card-number" name="card-number">
-    <button onclick="main()">Check</button>
+    <h1 class="title">Check valid credit card number</h1>
+    <div class="how-to">
+        <h3 class="title-how-to">How to use</h3>
+        <ol class="des-how-to">
+            <li>Enter credit card number that need to check into this field. Example: 6011144340682905.</li>
+            <li>Push <b>check</b> button.</li>
+            <li>Your result is on the screen after that.</li>
+        </ol>
+    </div class="how-to">
+   
+    <div class="input-area">
+        <input type="text" id="card-number" name="card-number" placeholder="Enter credit card number...">
+    </div>
+    <button id="check" onclick="main()">Check</button>
     <h3 id="result"></h3>
 </body>
 <script src="js/index.js"></script>

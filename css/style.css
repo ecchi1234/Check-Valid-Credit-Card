@@ -1,4 +1,45 @@
 html{
-    font-family: 'Montserrat';
-    background-color: lightcyan;
+    font-family: 'Montserrat', sans-serif;
+    --text-color: #5390d9;
+    --background-color: #56cfe1;
+    --title-color: #7400b8;
+    --white-color: #fff;
+    --button-hover-color: #5390d9;
+}
+
+
+.title{
+    text-align: center;
+    color: var(--title-color);
+}
+
+#card-number{
+    padding: 0.4rem;
+    border: 1px solid var(--text-color);
+    border-radius: 0.5rem;
+}
+
+#check{
+    background-color: var(--background-color);
+    border: 1px solid var(--background-color);
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    margin-top: 0.7rem;
+    margin-left: calc(50% - 23px);
+    color: var(--white-color);
+}
+#check:hover{
+    cursor: pointer;
+    background-color: var(--button-hover-color);
+    border-color: var(--button-hover-color);
+}
+.input-area{
+    display: flex;
+    justify-content: center;
+}
+#result{
+    text-align: center;
+}
+.how-to .title-how-to{
+    text-align: center;
 }
